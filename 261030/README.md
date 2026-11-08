@@ -4,16 +4,16 @@
 
 | 文件 | 内容 |
 |---|---|
-| 01.c | 3×4 二维数组，按行打印 12 个数（用指针顺序遍历） |
-| 02.c | 输入 n，计算 1! + 2! + … + n!，用函数 `factorial` 和 `factorial_add` 实现 |
-| 03.c | 密码验证，输入错误就循环提示，直到输入 `123456` |
-| 04.c | 输入行数和列数，打印 `[i,j]` 格式的网格 |
-| 05.c | 输入两个浮点数，输出它们的和 |
+| print_2d_array.c | 3×4 二维数组，按行打印 12 个数（用指针顺序遍历） |
+| factorial_sum.c | 输入 n，计算 1! + 2! + … + n!，用函数 `factorial` 和 `factorial_add` 实现 |
+| password_check.c | 密码验证，输入错误就循环提示，直到输入 `123456` |
+| grid_print.c | 输入行数和列数，打印 `[i,j]` 格式的网格 |
+| add_two_floats.c | 输入两个浮点数，输出它们的和 |
 
 **知识点**：二维数组与指针、函数声明与定义、`strcmp` 字符串比较、`do-while`、嵌套循环
 
-**注意**：02.c 中 `int` 在 n ≥ 13 时会溢出，结果会出错，之后可以学习 `long long` 或 `unsigned long long`。
+**注意**：factorial_sum.c 中 `int` 在 n ≥ 13 时会溢出，结果会出错，之后可以学习 `long long` 或 `unsigned long long`。
 
 **本次整理的改动**
-- 03.c：`scanf("%s", temp)` 改为 `scanf("%9s", temp)`。`temp` 只有 10 个字节，输入超过 9 个字符时原来会越界写入
-- 04.c：换行条件 `j == row` 改为 `j == column`。原来行数和列数不相等时，换行位置是错的
+- password_check.c：`scanf("%s", temp)` 改为 `scanf("%9s", temp)`。`temp` 只有 10 个字节，输入超过 9 个字符时原来会越界写入
+- grid_print.c：换行条件 `j == row` 改为 `j == column`。原来行数和列数不相等时，换行位置是错的

@@ -4,18 +4,18 @@
 
 | 文件 | 内容 |
 |---|---|
-| %3.c | 输出 1–200 中所有 3 的倍数（文件名含 `%`，建议以后改名） |
-| array_string.c | 把字符串 `a` 逐个字符复制到 `b` |
-| delete7.c | 输出 1–100 中既不是 7 的倍数、也不含数字 7 的数，每行 7 个 |
+| multiples_of_3.c | 输出 1–200 中所有 3 的倍数 |
+| string_copy.c | 把字符串 `a` 逐个字符复制到 `b` |
+| skip_seven.c | 输出 1–100 中既不是 7 的倍数、也不含数字 7 的数，每行 7 个 |
 | is_prime.c | 判断输入的数是否为素数，并列出 100 以内的所有素数 |
 | perfect_number.c | 找出 1000 以内的完全数（因数之和等于自身的数），结果为 6、28、496 |
-| plus.c | 九九乘法表（下三角） |
+| multiplication_table.c | 九九乘法表（下三角） |
 | pyramid.c | 输入底边长度 n，输出由 0 和 1 组成的图形 |
-| transfer.c | 输入一个字母，大小写互换，输入 `x` 退出 |
+| case_swap.c | 输入一个字母，大小写互换，输入 `x` 退出 |
 
 **知识点**：`continue` 和 `break`、取余判断、`sqrt` 与素数判断、字符串复制、大小写转换 `±32`
 
 **本次整理的改动**
 - perfect_number.c：缺少一个右花括号，无法编译。另外求因数和时把数本身也算进去了，且换行判断放在了循环外面。现已修正：只累加真因数（`j < i`），并且只在找到完全数时换行
-- array_string.c：`copy` 函数声明为返回 `int` 却没有 `return`，改为 `void`
+- string_copy.c：`copy` 函数声明为返回 `int` 却没有 `return`，改为 `void`
 - 删除 `tempCodeRunnerFile.c`。这是 VS Code 运行代码时自动生成的临时文件，内容是错误的草稿，可以用 `git checkout -- 261106/tempCodeRunnerFile.c` 恢复
