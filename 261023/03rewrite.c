@@ -26,6 +26,6 @@ int main(){
     }
 
     printf("The original number is %d\n",original_number);
-    printf("The reserved number is %d\n",reversed_number);
+    printf("The reversed number is %d\n",reversed_number);
     return 0;    
 }

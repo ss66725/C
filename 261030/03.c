@@ -6,7 +6,7 @@ int main (){
     char password[] = "123456";
     do{
         printf("Please input the password:");
-        scanf("%s", temp);
+        scanf("%9s", temp);
         if (strcmp(temp, password) == 0){
             break;
         }

@@ -8,7 +8,7 @@ int main (){
     for(i = 1;i <= row;i ++){
         for(j = 1;j <= column;j ++){
             printf("[%d,%d]",i,j);
-            if(j == row){
+            if(j == column){
                 printf("\n");
             }
         }

@@ -1,5 +1,5 @@
 #include<stdio.h>
-int copy(char from[], char to[]);
+void copy(char from[], char to[]);
 int main(){
     char a[] = {"I'm a teacher!"};
     char b[] = {"You're a student!"};
@@ -8,7 +8,7 @@ int main(){
     return 0;
 }
 
-int copy(char from[], char to[]){
+void copy(char from[], char to[]){
     int i = 0;
     while(from[i] != '\0'){
         to[i] = from[i];

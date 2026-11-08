@@ -2,7 +2,7 @@
 
 int main(){
     int day;
-    int year;
+    int month;
     printf("Please enter the day of the week:");
     scanf("%d",&day);
 
@@ -33,28 +33,28 @@ int main(){
             break;
     }
 
-    printf("Please enter the month of the year!");
-    scanf("%d",&year);
+    printf("Please enter the month of the year: ");
+    scanf("%d",&month);
 
-switch(year){
-    case 2:
+switch(month){
     case 3:
     case 4:
+    case 5:
         printf("It's spring!\n");
         break;
-    case 5:
     case 6:
     case 7:
+    case 8:
         printf("It's summer!\n");
         break;
-    case 8:
     case 9:
     case 10:
+    case 11:
         printf("It's autumn!\n");
         break;
-    case 11:
     case 12:
-    case 41:
+    case 1:
+    case 2:
         printf("It's winter!\n");
         break;
     default:

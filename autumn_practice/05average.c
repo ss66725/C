@@ -24,9 +24,13 @@ void average(float *p, int x){
 }
 
 void search(float (*p)[4], int x){
+    if(x < 1 || x > 3){
+        printf("Invalid number!\n");
+        return;
+    }
     printf("The score of No.%d is ",x);
     for(int i = 0;i < 4;i ++){
-        printf("%f",*(*(p+x-1) + i));
+        printf("%f ",*(*(p+x-1) + i));
     }
     printf("\n");
 }
@@ -42,7 +46,7 @@ void fail(float (*p)[4], int x){
     if(flag == 1){
         printf("The No%d is failed,the score is ",i+1); 
         for(int j = 0;j < 4;j ++){
-            printf("%f", p[i][j]);    
+            printf("%f ", p[i][j]);    
         }
         printf("\n");
     }
