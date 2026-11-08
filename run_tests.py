@@ -86,7 +86,7 @@ def build_command(source, workdir):
 
 def main():
     path_filter = sys.argv[1].replace("\\", "/") if len(sys.argv) > 1 else ""
-    env = dict(os.environ, PYTHONIOENCODING="utf-8")
+    env = dict(os.environ, PYTHONIOENCODING="utf-8", PYTHONHASHSEED="0")  # fixed set order
     passed = failed = 0
     with tempfile.TemporaryDirectory() as workdir:
         for rel, test_file, source in find_tests(path_filter):
