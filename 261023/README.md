@@ -21,3 +21,7 @@
 - weekday_season.c：原来用变量 `year` 保存月份，且季节对应错误（如把 5 月判成夏季，还多出一个 `case 41`）。现已改为 `month`，3–5 月为春、6–8 月为夏、9–11 月为秋、12/1/2 月为冬
 - reverse_digits_loop.c：原版在循环里重复打印，且循环用了浮点数，无法得到正确结果。现已改为能正常运行的版本，结果与 reverse_digits.c 一致
 - reverse_digits.c：`reserved` 改为 `reversed`
+
+## 期望输出
+
+本文件夹里的程序都有期望输出，放在 [tests/](tests/) 文件夹中。在仓库根目录运行 `python run_tests.py 261023` 即可自动检查。

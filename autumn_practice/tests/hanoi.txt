@@ -1,0 +1,19 @@
+input:
+2
+output:
+Please input the number of disks:The steps move 2 disks is:
+A-->B
+A-->C
+B-->C
+---
+input:
+3
+output:
+Please input the number of disks:The steps move 3 disks is:
+A-->C
+A-->B
+C-->B
+A-->C
+B-->A
+B-->C
+A-->C

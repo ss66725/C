@@ -1,0 +1,27 @@
+input:
+123
+output:
+Please input an integer with no more than three digits:It's hundreds digits
+The original number is 123
+The reversed number is 321
+---
+input:
+45
+output:
+Please input an integer with no more than three digits:It's tens digits
+The original number is 45
+The reversed number is 54
+---
+input:
+7
+output:
+Please input an integer with no more than three digits:It's ones digits
+The original number is 7
+The reversed number is 7
+---
+input:
+100
+output:
+Please input an integer with no more than three digits:It's hundreds digits
+The original number is 100
+The reversed number is 1

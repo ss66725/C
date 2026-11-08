@@ -1,0 +1,14 @@
+input:
+3 9 5
+output:
+Please input three different numbers:The largest number is 9
+---
+input:
+7 2 4
+output:
+Please input three different numbers:The largest number is 7
+---
+input:
+1 2 3
+output:
+Please input three different numbers:The largest number is 3

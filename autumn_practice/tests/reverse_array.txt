@@ -1,0 +1,4 @@
+input:
+output:
+The original array:123456789
+The inverted array:987654321

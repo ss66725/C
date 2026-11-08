@@ -1,0 +1,23 @@
+input:
+1
+output:
+Please input what you want to search:The average is 5.250000
+The score of No.1 is 5.000000 9.000000 6.000000 7.000000
+The No2 is failed,the score is 5.000000 7.000000 4.000000 8.000000
+The No3 is failed,the score is 2.000000 7.000000 2.000000 1.000000
+---
+input:
+3
+output:
+Please input what you want to search:The average is 5.250000
+The score of No.3 is 2.000000 7.000000 2.000000 1.000000
+The No2 is failed,the score is 5.000000 7.000000 4.000000 8.000000
+The No3 is failed,the score is 2.000000 7.000000 2.000000 1.000000
+---
+input:
+5
+output:
+Please input what you want to search:The average is 5.250000
+Invalid number!
+The No2 is failed,the score is 5.000000 7.000000 4.000000 8.000000
+The No3 is failed,the score is 2.000000 7.000000 2.000000 1.000000

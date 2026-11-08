@@ -1,0 +1,14 @@
+input:
+10 3 0.9
+output:
+Please write the single price, number and discount:The whole price is 27.00
+---
+input:
+20 5 0.9
+output:
+Please write the single price, number and discount:The whole price is 80.00
+---
+input:
+80 1 1
+output:
+Please write the single price, number and discount:The whole price is 70.00

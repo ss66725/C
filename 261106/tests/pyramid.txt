@@ -1,0 +1,15 @@
+input:
+3
+output:
+Please enter the number of the bottom:
+00000100000
+00001110000
+00011111000
+00111111100
+01111111110
+---
+input:
+1
+output:
+Please enter the number of the bottom:
+010

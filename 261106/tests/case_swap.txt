@@ -1,0 +1,30 @@
+input:
+a
+x
+output:
+Please input a letter to transfer:
+The answer is A
+Press x to exit:
+---
+input:
+A
+b
+q
+x
+output:
+Please input a letter to transfer:
+The answer is a
+Press x to exit:Please input a letter to transfer:
+The answer is Q
+Press x to exit:
+---
+input:
+1
+q
+x
+output:
+Please input a letter to transfer:
+Invalid value!
+Please input a letter to transfer:
+The answer is Q
+Press x to exit:

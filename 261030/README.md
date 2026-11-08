@@ -17,3 +17,7 @@
 **本次整理的改动**
 - password_check.c：`scanf("%s", temp)` 改为 `scanf("%9s", temp)`。`temp` 只有 10 个字节，输入超过 9 个字符时原来会越界写入
 - grid_print.c：换行条件 `j == row` 改为 `j == column`。原来行数和列数不相等时，换行位置是错的
+
+## 期望输出
+
+本文件夹里的程序都有期望输出，放在 [tests/](tests/) 文件夹中。在仓库根目录运行 `python run_tests.py 261030` 即可自动检查。

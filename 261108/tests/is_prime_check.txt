@@ -1,0 +1,11 @@
+input:
+2
+output:
+Please enter a number bigger than three that you want to exam:
+Yeah,it's a prime number!
+---
+input:
+9
+output:
+Please enter a number bigger than three that you want to exam:
+no,it's not a prime number!

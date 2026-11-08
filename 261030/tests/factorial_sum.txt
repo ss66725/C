@@ -1,0 +1,9 @@
+input:
+3
+output:
+Please enter the number to add the factorials:9
+---
+input:
+5
+output:
+Please enter the number to add the factorials:153

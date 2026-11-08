@@ -1,0 +1,37 @@
+input:
+9.42
+7.065
+28.26
+14.13
+21.195
+output:
+What is the circumference of a circle with radius 1.5?
+Your answer is correct!
+What is the area of a circle with radius 1.5?
+Your answer is correct!
+What is the surface area of a sphere with radius 1.5?
+Your answer is correct!
+What is the volume of a sphere with radius 1.5?
+Your answer is correct!
+What is the volume of a cylinder with radius 1.5 and height 3?
+Your answer is correct!
+You correctly answered 5 questions.
+---
+input:
+9.42
+1
+1
+1
+1
+output:
+What is the circumference of a circle with radius 1.5?
+Your answer is correct!
+What is the area of a circle with radius 1.5?
+Your answer is incorrect. The correct answer is 7.065000
+What is the surface area of a sphere with radius 1.5?
+Your answer is incorrect. The correct answer is 28.260000
+What is the volume of a sphere with radius 1.5?
+Your answer is incorrect. The correct answer is 14.130000
+What is the volume of a cylinder with radius 1.5 and height 3?
+Your answer is incorrect. The correct answer is 21.195000
+You correctly answered 1 questions.

@@ -11,4 +11,15 @@
 | [261108](261108/README.md) | 素数判断、循环输出 | 判断素数、输出 200–300 之间的素数 |
 | [autumn_practice](autumn_practice/README.md) | 秋季练习 | 按题号排列，从基础语法到递归 |
 
+## 运行测试
+
+每个程序都有示例输入和期望输出（放在各文件夹的 `tests/` 里）。在仓库根目录运行下面的命令，会自动编译、运行并比对结果：
+
+```bash
+python run_tests.py
+```
+
+只检查某一天的程序，可以加上文件夹名：`python run_tests.py 261023`。
+
 编译产生的 `.exe` 文件不纳入仓库，见 [.gitignore](.gitignore)。
+

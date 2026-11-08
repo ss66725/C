@@ -1,0 +1,9 @@
+input:
+1.5, 2.25
+output:
+Please input two float in 100:The result is 3.750000
+---
+input:
+1.5,2.25
+output:
+Please input two float in 100:The result is 3.750000

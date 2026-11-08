@@ -1,0 +1,9 @@
+input:
+3 9 5
+output:
+Please write three numbers:The order is 9 5 3
+---
+input:
+1 2 3
+output:
+Please write three numbers:The order is 3 2 1

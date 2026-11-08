@@ -15,3 +15,7 @@
 **本次整理的改动**
 - char_shift.c：`char a[5]` 改为 `char a[6]`，给字符串结尾的 `'\0'` 留出位置
 - price_discount.c：提示语 `prince` 改为 `price`
+
+## 期望输出
+
+本文件夹里的程序都有期望输出，放在 [tests/](tests/) 文件夹中。在仓库根目录运行 `python run_tests.py 261016` 即可自动检查。

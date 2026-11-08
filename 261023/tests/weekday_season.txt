@@ -1,0 +1,20 @@
+input:
+3
+5
+output:
+Please enter the day of the week:Wednesday
+Please enter the month of the year: It's spring!
+---
+input:
+7
+12
+output:
+Please enter the day of the week:Sunday
+Please enter the month of the year: It's winter!
+---
+input:
+1
+13
+output:
+Please enter the day of the week:Monday
+Please enter the month of the year: Invalid month!

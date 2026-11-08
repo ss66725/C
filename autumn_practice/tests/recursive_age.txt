@@ -1,0 +1,9 @@
+input:
+3
+output:
+I want to know:The age of the 3 student is 14
+---
+input:
+6
+output:
+I want to know:Invalid value!

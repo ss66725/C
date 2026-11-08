@@ -19,3 +19,7 @@
 - perfect_number.c：缺少一个右花括号，无法编译。另外求因数和时把数本身也算进去了，且换行判断放在了循环外面。现已修正：只累加真因数（`j < i`），并且只在找到完全数时换行
 - string_copy.c：`copy` 函数声明为返回 `int` 却没有 `return`，改为 `void`
 - 删除 `tempCodeRunnerFile.c`。这是 VS Code 运行代码时自动生成的临时文件，内容是错误的草稿，可以用 `git checkout -- 261106/tempCodeRunnerFile.c` 恢复
+
+## 期望输出
+
+本文件夹里的程序都有期望输出，放在 [tests/](tests/) 文件夹中。在仓库根目录运行 `python run_tests.py 261106` 即可自动检查。
