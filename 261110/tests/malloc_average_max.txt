@@ -1,0 +1,7 @@
+input:
+4
+3 7 2 9
+output:
+Please enter a number:Please enter the numbers in a!
+The average number is 5
+The max number is 9

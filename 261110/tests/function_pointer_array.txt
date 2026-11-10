@@ -1,0 +1,17 @@
+input:
+1
+output:
+Mode1 max | Mode2 min | Mode3 sum
+You want to choses Mode5	4	9	6
+---
+input:
+2
+output:
+Mode1 max | Mode2 min | Mode3 sum
+You want to choses Mode1	3	7	2
+---
+input:
+3
+output:
+Mode1 max | Mode2 min | Mode3 sum
+You want to choses Mode6	7	16	8
