@@ -1,0 +1,21 @@
+input:
+output:
+name: Claude
+age: 1
+grade: 1
+
+name: Mike
+age: 21
+grade: 3
+
+name: Jack
+age: 14
+grade: 9
+
+name: Tony
+age: 7
+grade: 2
+
+name: Mike
+age: 21
+grade: 3
