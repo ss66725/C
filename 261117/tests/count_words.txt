@@ -1,0 +1,23 @@
+input:
+hello world
+output:
+Please enter a sentence:
+There are 2 words in this sentence.
+---
+input:
+apple
+output:
+Please enter a sentence:
+There are 1 words in this sentence.
+---
+input:
+i love c programming
+output:
+Please enter a sentence:
+There are 4 words in this sentence.
+---
+input:
+    leading spaces
+output:
+Please enter a sentence:
+There are 2 words in this sentence.

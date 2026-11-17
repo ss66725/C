@@ -1,0 +1,17 @@
+input:
+99 1 2 3 4 5 6 7 8 9 10 11
+output:
+Please enter 12 numbers:
+The max number is 99, it's located in arr[0][0]
+---
+input:
+1 2 3 4 5 6 7 8 9 10 11 99
+output:
+Please enter 12 numbers:
+The max number is 99, it's located in arr[2][3]
+---
+input:
+1 2 3 4 5 66 7 8 9 10 11 12
+output:
+Please enter 12 numbers:
+The max number is 66, it's located in arr[1][1]
