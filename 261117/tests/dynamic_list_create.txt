@@ -1,0 +1,5 @@
+input:
+output:
+arctan 2
+arcsin 4
+arccos 6
