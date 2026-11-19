@@ -1,0 +1,5 @@
+input:
+output:
+Tom	5
+Mike	15
+Jane	67
