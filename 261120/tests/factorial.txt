@@ -1,0 +1,23 @@
+input:
+5
+output:
+Please enter the number to get its factorial!
+The asw is 120
+---
+input:
+0
+output:
+Please enter the number to get its factorial!
+The asw is 1
+---
+input:
+1
+output:
+Please enter the number to get its factorial!
+The asw is 1
+---
+input:
+-1
+output:
+Please enter the number to get its factorial!
+Invalid value!
