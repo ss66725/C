@@ -7,14 +7,15 @@ struct student{
     int age;
     struct student *next;
 };
+typedef struct student Student;
 
 int main(){
-    struct student *head = NULL;
-    struct student *tail = NULL;
+    Student *head = NULL;
+    Student *tail = NULL;
     char *name[3] = {"Tom", "Mike", "Jane"};
     int age[3] = {5, 15, 67};
     for(int i=0;i<3;i++){
-        struct student *p = malloc(sizeof(struct student));
+        Student *p = malloc(sizeof(Student));
         strcpy(p->name, name[i]);
         p->age = age[i];
         p->next = NULL;
@@ -26,13 +27,13 @@ int main(){
         }        
         tail = p;
     }
-    struct student *p;
+    Student *p;
     p = head;
     for(;p!=NULL;p=p->next){
         printf("%s\t%d\n", p->name, p->age);
     }
     while(head!=NULL){
-        struct student *temp = head;
+        Student *temp = head;
         head = temp->next;
         free(temp);
     }

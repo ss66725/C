@@ -1,0 +1,37 @@
+input:
+1
+output:
+Please enter a day number (1-7):
+Monday
+---
+input:
+3
+output:
+Please enter a day number (1-7):
+Wednesday
+---
+input:
+6
+output:
+Please enter a day number (1-7):
+Saturday
+It is weekend.
+---
+input:
+7
+output:
+Please enter a day number (1-7):
+Sunday
+It is weekend.
+---
+input:
+9
+output:
+Please enter a day number (1-7):
+Invalid day
+---
+input:
+0
+output:
+Please enter a day number (1-7):
+Invalid day

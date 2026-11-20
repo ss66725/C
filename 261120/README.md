@@ -1,13 +1,15 @@
-# 261120：动态链表重写、共用体
+# 261120：动态链表重写、共用体、枚举、typedef
 
-对应教材第 9 章 9.4.3–9.4.4（动态链表）与 9.5（共用体）。
+对应教材第 9 章 9.4.3–9.4.4（动态链表）、9.5（共用体）、9.6（枚举）、9.7（typedef）。
 
 ## 文件
 
 | 文件 | 内容 |
 |---|---|
-| `dynamic_list_build.c` | 从零重写动态链表：`malloc` 建三个节点、尾插法连链、遍历、逐个释放 |
+| `dynamic_list_build.c` | 从零重写动态链表：`malloc` 建三个节点、尾插法连链、遍历、逐个释放；用 `typedef` 给结构体起别名 `Student` |
 | `union_basic.c` | 共用体基本用法：验证成员共用同一块内存，以及 `sizeof` 取最大成员 |
+| `weekday_enum.c` | 枚举练习：输入 1–7 输出星期名，周末额外提示，越界报错 |
+| `max_of_100.c` | 读入 100 个数，用取两数较大值的函数逐个比较求最大值 |
 
 ## 知识点
 
@@ -35,10 +37,31 @@
 - `char c[4]` 只能装 3 个字符 + `'\0'`。`strcpy(d.c, "khdo")` 会写 5 字节造成越界，gcc 用 `-Wstringop-overflow` 报出来。
 - 用途：省内存（单片机上常见）、同一块数据多种解释（硬件寄存器、通信协议）、变体记录（`union` 加一个标签字段记着当前是哪种）。
 
+### 枚举
+
+- `enum weekday { MON = 1, TUE, WED, THU, FRI, SAT, SUN };` 是**类型定义**，不是变量，所以后面不能写 `=`。
+- 成员默认从 0 开始递增；显式指定后，后面的成员接着往下数。`MON = 1` 时 `SUN` 就是 7。
+- `enum weekday d; d = asw;` 合法。枚举变量本质就是 `int`，**C 不检查范围**，所以 `switch` 必须有 `default` 兜底。
+- `case` 后面必须是编译期常量，不能写表达式。`case SAT && SUN:` 不合法。
+- 同一个值只能有一个 `case`，重复出现报 `duplicate case value`。
+- 多个值要做**完全一样**的事，才用穿透（两个 `case` 叠着写，中间不 `break`）。名字和输出不同时，各写各的。
+- `default` 里不要 `return 1`：用户输错数字不算程序出错，正常走 `return 0`。
+
+### typedef
+
+- `typedef struct student Student;` 之后，`Student s1;` 与 `struct student s1;` 等价。
+- 别名在**整条语句结束后**才生效，所以结构体内部不能写 `Student *next;`，只能写 `struct student *next;`。
+- typedef 由编译器处理，有类型信息；`#define` 只是文本替换。起别名用 typedef，不用 `#define`。
+- `sizeof(struct)` 一般是成员大小之和，但有**内存对齐填充**：`struct { char a; int b; }` 是 8 不是 5。本文件的 20+4+4 正好没有空隙。
+
 ## 本次改动
 
 - 新建当天文件夹，归档动态链表重写版和共用体练习。
 - `01.c` 改名为 `dynamic_list_build.c`，`02.c` 改名为 `union_basic.c`。
+- 新增枚举练习 `weekday_enum.c`。
+- 新增 `max_of_100.c`，并修复原稿的两个问题：`printf` 写在 `for` 循环里且条件是 `i == 100`，而循环条件为 `i < 100`，**永远不会执行**；提示语写“99 numbers”却读入 100 个。现改为循环结束后统一输出，提示语改成 100。
+- `dynamic_list_build.c` 改用 `typedef struct student Student;`，全文用 `Student`，结构体内 `next` 仍写 `struct student *`。
+- 删除重复的 `01.c`（与 `weekday_enum.c` 内容相同）。
 
 ## 期望输出说明
 
@@ -46,3 +69,5 @@
 |---|---|
 | `dynamic_list_build` | 无输入，输出 Tom、Mike、Jane 三个节点 |
 | `union_basic` | 无输入，依次输出 `d.i`、`d.c` 和 `sizeof` |
+| `weekday_enum` | 输入 1–7 输出英文星期名，6、7 额外输出周末提示，其余输出 `Invalid day` |
+| `max_of_100` | 输入 100 个整数，输出其中的最大值 |
