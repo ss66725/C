@@ -6,3 +6,9 @@ tempCodeRunnerFile.c
 
 # Build output folder used by .vscode/launch.json
 build/
+
+# Data files written by the file I/O practice programs; recreated on every run
+*.dat
+dd.txt
+ss.txt
+score.txt
