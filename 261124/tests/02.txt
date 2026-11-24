@@ -1,0 +1,7 @@
+﻿input:
+output:
+10	20	30	40	
+---
+input:
+output:
+10	20	30	40	

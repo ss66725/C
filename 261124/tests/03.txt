@@ -1,0 +1,7 @@
+﻿input:
+output:
+It has 5 letters
+---
+input:
+output:
+It has 5 letters
