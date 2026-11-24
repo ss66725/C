@@ -1,0 +1,8 @@
+input:
+output:
+126.000000
+size == 400
+0.000000
+fgetc = -1
+feof = 1
+ferror = 0
